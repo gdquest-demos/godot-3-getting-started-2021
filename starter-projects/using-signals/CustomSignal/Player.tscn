@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 26.0512
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "setup"
 length = 0.001
 tracks/0/type = "value"
@@ -22,8 +22,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "take_damage"
+[sub_resource type="Animation" id=3]
 length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:modulate")
@@ -49,7 +48,7 @@ shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "setup"
-anims/setup = SubResource( 3 )
-anims/take_damage = SubResource( 2 )
+anims/setup = SubResource( 2 )
+anims/take_damage = SubResource( 3 )
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
