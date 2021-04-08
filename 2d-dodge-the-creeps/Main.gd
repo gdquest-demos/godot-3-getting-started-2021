@@ -27,7 +27,7 @@ func new_game():
 
 
 func _on_MobTimer_timeout():
-	var mob_spawn_location = get_node("MobPath/MobSpawnLocation")
+	var mob_spawn_location = $"MobPath/MobSpawnLocation"
 	mob_spawn_location.offset = randi()
 
 	var mob = mob_scene.instance()
