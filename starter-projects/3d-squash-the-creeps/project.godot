@@ -1,0 +1,22 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Squash the Creeps (3D): starter project"
+config/description="A 3D game where you dodge and jump on little aliens.
+
+This is the starter project for the video version of the First 3D Game tutorial published on the GDQuest YouTube channel."
+config/icon="res://icon.png"
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+quality/filters/msaa=3
